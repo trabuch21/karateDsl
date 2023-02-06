@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="conduitApp.ConduitTest" time="70.433" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/usr/src/app/target/test-classes:/usr/src/app/target/classes:/root/.m2/repository/com/intuit/karate/karate-junit5/1.3.1/karate-junit5-1.3.1.jar:/root/.m2/repository/com/intuit/karate/karate-core/1.3.1/karate-core-1.3.1.jar:/root/.m2/repository/org/graalvm/js/js-scriptengine/22.0.0.2/js-scriptengine-22.0.0.2.jar:/root/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0.2/graal-sdk-22.0.0.2.jar:/root/.m2/repository/org/graalvm/js/js/22.0.0.2/js-22.0.0.2.jar:/root/.m2/repository/org/graalvm/regex/regex/22.0.0.2/regex-22.0.0.2.jar:/root/.m2/repository/org/graalvm/truffle/truffle-api/22.0.0.2/truffle-api-22.0.0.2.jar:/root/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/root/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/root/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/root/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/root/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/root/.m2/repository/com/linecorp/armeria/armeria/1.18.0/armeria-1.18.0.jar:/root/.m2/repository/io/micrometer/micrometer-core/1.9.2/micrometer-core-1.9.2.jar:/root/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/root/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/root/.m2/repository/io/netty/netty-transport/4.1.79.Final/netty-transport-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-common/4.1.79.Final/netty-common-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-buffer/4.1.79.Final/netty-buffer-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-resolver/4.1.79.Final/netty-resolver-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec-haproxy/4.1.79.Final/netty-codec-haproxy-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec/4.1.79.Final/netty-codec-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec-http2/4.1.79.Final/netty-codec-http2-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-handler/4.1.79.Final/netty-handler-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec-http/4.1.79.Final/netty-codec-http-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-resolver-dns/4.1.79.Final/netty-resolver-dns-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec-dns/4.1.79.Final/netty-codec-dns-4.1.79.Final.jar:/root/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/root/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar:/root/.m2/repository/io/netty/netty-transport-native-epoll/4.1.79.Final/netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar:/root/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.79.Final/netty-transport-classes-epoll-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar:/root/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.79.Final/netty-resolver-dns-classes-macos-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar:/root/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar:/root/.m2/repository/io/netty/netty-tcnative-classes/2.0.53.Final/netty-tcnative-classes-2.0.53.Final.jar:/root/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar:/root/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar:/root/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar:/root/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar:/root/.m2/repository/io/netty/netty-handler-proxy/4.1.79.Final/netty-handler-proxy-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec-socks/4.1.79.Final/netty-codec-socks-4.1.79.Final.jar:/root/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.7.1/brotli4j-1.7.1.jar:/root/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.7.1/native-linux-x86_64-1.7.1.jar:/root/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/root/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.9/logback-classic-1.2.9.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar:/root/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/root/.m2/repository/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar:/root/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/root/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/root/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/root/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/root/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/root/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/root/.m2/repository/org/yaml/snakeyaml/1.32/snakeyaml-1.32.jar:/root/.m2/repository/de/siegmar/fastcsv/2.0.0/fastcsv-2.0.0.jar:/root/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar:/root/.m2/repository/io/github/classgraph/classgraph/4.8.149/classgraph-4.8.149.jar:/root/.m2/repository/io/github/t12y/resemble/1.0.2/resemble-1.0.2.jar:/root/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/root/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/root/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/root/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/root/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/root/.m2/repository/net/masterthought/cucumber-reporting/5.6.1/cucumber-reporting-5.6.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.1/jackson-databind-2.12.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.1/jackson-annotations-2.12.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.1/jackson-core-2.12.1.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar:/root/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/root/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/root/.m2/repository/joda-time/joda-time/2.10.10/joda-time-2.10.10.jar:/root/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/root/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/root/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/root/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/root/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/root/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/root/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/root/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/root/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/root/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/root/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/root/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/java/openjdk-18/lib"/>
+    <property name="sun.java.command" value="/usr/src/app/target/surefire/surefirebooter4859924551052639275.jar /usr/src/app/target/surefire 2023-02-03T23-10-03_336-jvmRun1 surefire9195082899528027171tmp surefire_015421558957930431308tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/usr/src/app/target/test-classes:/usr/src/app/target/classes:/root/.m2/repository/com/intuit/karate/karate-junit5/1.3.1/karate-junit5-1.3.1.jar:/root/.m2/repository/com/intuit/karate/karate-core/1.3.1/karate-core-1.3.1.jar:/root/.m2/repository/org/graalvm/js/js-scriptengine/22.0.0.2/js-scriptengine-22.0.0.2.jar:/root/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0.2/graal-sdk-22.0.0.2.jar:/root/.m2/repository/org/graalvm/js/js/22.0.0.2/js-22.0.0.2.jar:/root/.m2/repository/org/graalvm/regex/regex/22.0.0.2/regex-22.0.0.2.jar:/root/.m2/repository/org/graalvm/truffle/truffle-api/22.0.0.2/truffle-api-22.0.0.2.jar:/root/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/root/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/root/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/root/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/root/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/root/.m2/repository/com/linecorp/armeria/armeria/1.18.0/armeria-1.18.0.jar:/root/.m2/repository/io/micrometer/micrometer-core/1.9.2/micrometer-core-1.9.2.jar:/root/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/root/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/root/.m2/repository/io/netty/netty-transport/4.1.79.Final/netty-transport-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-common/4.1.79.Final/netty-common-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-buffer/4.1.79.Final/netty-buffer-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-resolver/4.1.79.Final/netty-resolver-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec-haproxy/4.1.79.Final/netty-codec-haproxy-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec/4.1.79.Final/netty-codec-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec-http2/4.1.79.Final/netty-codec-http2-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-handler/4.1.79.Final/netty-handler-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec-http/4.1.79.Final/netty-codec-http-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-resolver-dns/4.1.79.Final/netty-resolver-dns-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec-dns/4.1.79.Final/netty-codec-dns-4.1.79.Final.jar:/root/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/root/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar:/root/.m2/repository/io/netty/netty-transport-native-epoll/4.1.79.Final/netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar:/root/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.79.Final/netty-transport-native-unix-common-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.79.Final/netty-transport-classes-epoll-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar:/root/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.79.Final/netty-resolver-dns-classes-macos-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.79.Final/netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar:/root/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar:/root/.m2/repository/io/netty/netty-tcnative-classes/2.0.53.Final/netty-tcnative-classes-2.0.53.Final.jar:/root/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar:/root/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar:/root/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar:/root/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.53.Final/netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar:/root/.m2/repository/io/netty/netty-handler-proxy/4.1.79.Final/netty-handler-proxy-4.1.79.Final.jar:/root/.m2/repository/io/netty/netty-codec-socks/4.1.79.Final/netty-codec-socks-4.1.79.Final.jar:/root/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.7.1/brotli4j-1.7.1.jar:/root/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.7.1/native-linux-x86_64-1.7.1.jar:/root/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/root/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.9/logback-classic-1.2.9.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar:/root/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/root/.m2/repository/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar:/root/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/root/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/root/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/root/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/root/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/root/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/root/.m2/repository/org/yaml/snakeyaml/1.32/snakeyaml-1.32.jar:/root/.m2/repository/de/siegmar/fastcsv/2.0.0/fastcsv-2.0.0.jar:/root/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar:/root/.m2/repository/io/github/classgraph/classgraph/4.8.149/classgraph-4.8.149.jar:/root/.m2/repository/io/github/t12y/resemble/1.0.2/resemble-1.0.2.jar:/root/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/root/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/root/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/root/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/root/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/root/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/root/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/root/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/root/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/root/.m2/repository/net/masterthought/cucumber-reporting/5.6.1/cucumber-reporting-5.6.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.1/jackson-databind-2.12.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.1/jackson-annotations-2.12.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.1/jackson-core-2.12.1.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.1/jackson-datatype-jsr310-2.12.1.jar:/root/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/root/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/root/.m2/repository/joda-time/joda-time/2.10.10/joda-time-2.10.10.jar:/root/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/root/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/root/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/root/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar:/root/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/root/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar:/root/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar:/root/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/root/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/root/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/root/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/root/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.home" value="/usr/java/openjdk-18"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/usr/src/app"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/usr/src/app/target/surefire/surefirebooter4859924551052639275.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18.0.2.1+1-1"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.49-linuxkit"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="18.0.2.1"/>
+    <property name="user.dir" value="/usr/src/app"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.2.1+1-1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="testParallel" classname="conduitApp.ConduitTest" time="70.406">
+    <failure message="match failed: EQUALS&#10;  $ | not equal | match failed for name: &apos;articlesCount&apos; (MAP:MAP)&#10;  {&quot;articles&quot;:[{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn&apos;t concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I&apos;ll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeffory-Mallister-132513&quot;,&quot;title&quot;:&quot;Jeffory Mallister&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Brandon-the-Bad-132513&quot;,&quot;title&quot;:&quot;Brandon the Bad&quot;,&quot;description&quot;:&quot;Lys&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.184Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.184Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:222}&#10;  {&quot;articles&quot;:&quot;#[10]&quot;,&quot;articlesCount&quot;:220}&#10;&#10;    $.articlesCount | not equal (NUMBER:NUMBER)&#10;    222&#10;    220&#10;&#10;classpath:conduitApp/features/HomePage.feature:25&#10;match failed: EQUALS&#10;  $ | not equal (NUMBER:NUMBER)&#10;  0&#10;  1&#10;&#10;classpath:conduitApp/features/HomePage.feature:44&#10;too many retry attempts: 10&#10;classpath:conduitApp/features/HomePage.feature:52&#10;status code was: 500, expected: 200, response time in milliseconds: 420, url: https://api.realworld.io/api/articles/Haldon-132513/favorite, response: &#10;&quot;\nInvalid `prisma.article.update()` invocation:\n\n\nQuery interpretation error. Error for binding &apos;0&apos;: AssertionError(\&quot;Required exactly one parent ID to be present for connect query, found 0.\&quot;)&quot;&#10;classpath:conduitApp/features/HomeWork.feature:29 ==&gt; expected: &lt;0&gt; but was: &lt;4&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | not equal | match failed for name: 'articlesCount' (MAP:MAP)
+  {"articles":[{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Brandon-the-Bad-132513","title":"Brandon the Bad","description":"Lys","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:18:43.184Z","updatedAt":"2023-01-30T19:18:43.184Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":222}
+  {"articles":"#[10]","articlesCount":220}
+
+    $.articlesCount | not equal (NUMBER:NUMBER)
+    222
+    220
+
+classpath:conduitApp/features/HomePage.feature:25
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  0
+  1
+
+classpath:conduitApp/features/HomePage.feature:44
+too many retry attempts: 10
+classpath:conduitApp/features/HomePage.feature:52
+status code was: 500, expected: 200, response time in milliseconds: 420, url: https://api.realworld.io/api/articles/Haldon-132513/favorite, response: 
+"\nInvalid `prisma.article.update()` invocation:\n\n\nQuery interpretation error. Error for binding '0': AssertionError(\"Required exactly one parent ID to be present for connect query, found 0.\")"
+classpath:conduitApp/features/HomeWork.feature:29 ==> expected: <0> but was: <4>
+	at conduitApp.ConduitTest.testParallel(ConduitTest.java:27)
+]]></failure>
+    <system-out><![CDATA[23:10:07.078 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:10:07.113 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1675465807111
+23:10:07.135 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+23:10:13.462 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:13.513 [pool-1-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/createToken.feature
+23:10:14.953 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"trabuch21@gmail.com","password":"Pokemon1411"}}
+
+23:10:15.917 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 960
+1 < 200
+1 < Date: Fri, 03 Feb 2023 23:10:16 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"158-Ydbz5OmuZt4RrRv4pnXuGoLd8cw"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pbMxfn8gN%2B1x8kkwtBvsOwrO3oYxJn4uabUgm44CoiO5KJky7W1sJa8e5z5WwjLDjms1j9lJUk8vmNJOXEx8FlRUnVx8dAF%2BciFe7LqFhjNPmI1H6djJBbJYISjSw%2Faoq68D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6c3bf6baf7c-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"trabuch21@gmail.com","username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0"}}
+
+23:10:15.942 [pool-1-thread-3] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/createToken.feature
+23:10:15.958 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:15.969 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:15.982 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:15.993 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:10:15.994 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:16.001 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:10:16.052 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:10:16.710 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"taglist":[],"title":"Haldon","description":"Pentos","body":"Hodor? Hodor."}}
+
+23:10:16.711 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 111
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+{"article":{"taglist":[],"title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love."}}
+
+23:10:17.285 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1290
+1 < 200
+1 < Date: Fri, 03 Feb 2023 23:10:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"76-QAIKJ+jzFJHRIavFYxLRj4MZAjA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=if9zwcT54ddpXgC4V33fjtvQUTfATHnbC4v%2BGrYvfLMr1NVdr3GQWS%2BpeT%2FNC%2BFSwMk%2BqyvgnlLExibPq1AvEsUkv6yaxPVeL7BmVtBEVC1%2FUE5RI5qsQx4EBOiGnX7iRESl"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6c8eb73afe7-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["implementations","welcome","introduction","codebaseShow","ipsum","qui","et","quia","cupiditate","deserunt"]}
+
+23:10:17.285 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1231
+1 < 200
+1 < Date: Fri, 03 Feb 2023 23:10:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"f34-KPJGItKChTk8RnytD4hLrQ8D06Y"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JADkiI%2FblLZwVSPdrVeRR2MIKhVOZA6c4WnTV0y6rm8SjUOCanwpF2TVsE13IPtghAIRGLzm1ZJz%2BKeyNMlSVs2Hg1V%2FNCD2LHOTPSYCmTR1IVDQzwHEXVsz2IDOhyccSyS3"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6c90aaa3bfd-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Brandon-the-Bad-132513","title":"Brandon the Bad","description":"Lys","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:18:43.184Z","updatedAt":"2023-01-30T19:18:43.184Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":222}
+
+23:10:17.286 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 569
+1 < 200
+1 < Date: Fri, 03 Feb 2023 23:10:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"17c-wCMmssOXAsB8aGdHgT9XStFNwN8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=18%2BsTbK3FSZr2zZ24vTsnfMlpmoyhC0uWc2S7LWADFCrLY69jLEzBZlp7R8xK8JaGxta6fBcDzYzAU6EYkJv5DLkVmPATZ78QLHmiyNs8229QTIhPMLWYZgaEzt%2FbPZ1jU5E"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6cc58993487-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"article":{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+23:10:17.286 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 574
+1 < 200
+1 < Date: Fri, 03 Feb 2023 23:10:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15e-TmiQgWXyiePwTtxDZjgHYw4aJdc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EMatun8HD6Zml6k29Y18phEoDsKCqkkJqb2LEvJlkJI254KCwDJaNCGsCW56tx4z7s357Tr6cyJspPLVYeQdsSlYfkVIZ84rBhP4%2FM3wXN7rYQdLCeNVXoW0WhxnNxtX0ShJ"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6cc59def5a3-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"article":{"slug":"Haldon-132513","title":"Haldon","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-02-03T23:10:17.290Z","updatedAt":"2023-02-03T23:10:17.290Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
+
+23:10:17.286 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1283
+1 < 200
+1 < Date: Fri, 03 Feb 2023 23:10:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"f34-KPJGItKChTk8RnytD4hLrQ8D06Y"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NQM9YJj69Cwbmvc6UgaqcS5evRfPF7ppOh4%2FfMa6jDok1pRTcqodXhD%2ByDyNbpJl0culPvTBZQjy%2FsvAzupDhbuaJOt5R8Jszrv84EfkSCTwO6xOYRyYZMOxaGrgqoo%2FQQ8C"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6c8f87ce397-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Brandon-the-Bad-132513","title":"Brandon the Bad","description":"Lys","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:18:43.184Z","updatedAt":"2023-01-30T19:18:43.184Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":222}
+
+23:10:17.304 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+2 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+23:10:17.313 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+23:10:17.340 [pool-1-thread-4] ERROR com.intuit.karate - classpath:conduitApp/features/HomePage.feature:25
+And match response == {"articles":"#[10]", "articlesCount":220}
+match failed: EQUALS
+  $ | not equal | match failed for name: 'articlesCount' (MAP:MAP)
+  {"articles":[{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Brandon-the-Bad-132513","title":"Brandon the Bad","description":"Lys","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:18:43.184Z","updatedAt":"2023-01-30T19:18:43.184Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":222}
+  {"articles":"#[10]","articlesCount":220}
+
+    $.articlesCount | not equal (NUMBER:NUMBER)
+    222
+    220
+
+classpath:conduitApp/features/HomePage.feature:25
+23:10:17.345 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:17.356 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:17.364 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:17.364 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:10:17.372 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:10:17.395 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:10:18.529 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1222
+2 < 200
+2 < Date: Fri, 03 Feb 2023 23:10:18 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"f1e-ap111XhILt1yqWYhbUXZRdggySI"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7B1GGVJwEfAevxgoy8iDKizKob2yPfmwerkgUex1iDFT4DU%2FFMXwbae7K2l2%2FinXuiE4Pl0rl7W1BNzRzsl4csDMT%2FX%2BfZrJGL7gzcpGXPmBarJF%2Bv8mlGxVkjWKJ6BIvKv4"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 793ed6cfbdcbafcf-NRT
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Haldon-132513","title":"Haldon","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-02-03T23:10:17.290Z","updatedAt":"2023-02-03T23:10:17.290Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":224}
+
+23:10:18.587 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+3 > DELETE https://api.realworld.io/api/articles/Haldon-132513
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+3 > Host: api.realworld.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+3 > Accept-Encoding: gzip,deflate
+
+
+23:10:18.590 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1222
+1 < 200
+1 < Date: Fri, 03 Feb 2023 23:10:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"f1e-ap111XhILt1yqWYhbUXZRdggySI"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tHx7piej3vO%2BRMeGi6h62ZAh2YE67Di%2Fyv6CR0HlGaG50znQb4Sf60IjI9TuHqQH%2FEfHmIB6xN9O1QmVtWWAUgAwfsMs45cLJMTjLrM2tLqDlkxBlD7I04qqs7r5PVA9kvJE"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6d03921b006-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Haldon-132513","title":"Haldon","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-02-03T23:10:17.290Z","updatedAt":"2023-02-03T23:10:17.290Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":224}
+
+23:10:18.598 [pool-1-thread-1] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:18.600 [pool-1-thread-1] DEBUG com.intuit.karate - sleeping before retry #1
+23:10:19.051 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1735
+2 < 200
+2 < Date: Fri, 03 Feb 2023 23:10:18 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"f1e-ap111XhILt1yqWYhbUXZRdggySI"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=COnxI1U59TrJdzDnOtKBHCIX3uIbp1XrP1WuO6Pcix0HuaFDQlrdHXR0SGx%2F%2FHynMCdTeOWdgGnK2MZBqKTGEHoB9TPi1zUKB6bxyJPT3luHcmEBY2zCrwC2Ft5hikPp%2Fecz"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 793ed6cfe855e082-NRT
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Haldon-132513","title":"Haldon","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-02-03T23:10:17.290Z","updatedAt":"2023-02-03T23:10:17.290Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":224}
+
+23:10:19.051 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1677
+1 < 200
+1 < Date: Fri, 03 Feb 2023 23:10:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"f1e-ap111XhILt1yqWYhbUXZRdggySI"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=X0kie9YJxW2Z4v%2BetXsXcgBWK%2FfNmPdxnxEIIIA1LY4%2FD3dvXUZz0KYWEbOSLda7impKz7ix3o9GcRqFhs1TeGg47v%2Ft2BGXb%2FzdSFwr%2B2%2FrWk72mlKvTh7VsbhiuqhDTxiF"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6d02ac6af9f-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Haldon-132513","title":"Haldon","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-02-03T23:10:17.290Z","updatedAt":"2023-02-03T23:10:17.290Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":224}
+
+23:10:19.051 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1653
+1 < 200
+1 < Date: Fri, 03 Feb 2023 23:10:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"f1e-ap111XhILt1yqWYhbUXZRdggySI"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BNvGXszdhhdGzkjp8%2FqqDurK5feXEgAUEI6GRC98RFjwlt63oD6zcHIifpZahjoS0KVPH8NebwmFUrgitoRTrFNJepxTbG4wtLZDiTsL%2FJkEI%2BxLR1SA4rA4kM0U3zCOgyCQ"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6d06aee347b-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Haldon-132513","title":"Haldon","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-02-03T23:10:17.290Z","updatedAt":"2023-02-03T23:10:17.290Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":224}
+
+23:10:19.058 [pool-1-thread-5] ERROR com.intuit.karate - classpath:conduitApp/features/HomePage.feature:44
+And match response.articles[0].favoritesCount == result
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  0
+  1
+
+classpath:conduitApp/features/HomePage.feature:44
+23:10:19.075 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+2 > POST https://api.realworld.io/api/articles/Haldon-132513/favorite
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+23:10:19.453 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 863
+3 < 204
+3 < Date: Fri, 03 Feb 2023 23:10:19 GMT
+3 < Content-Length: 0
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+3 < Via: 1.1 vegur
+3 < CF-Cache-Status: DYNAMIC
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=PslLP5wT3CMQUbJFO3vuK0%2FLHBVnXPP2oSWSbe2oXhONUlLiCJDX6L6PhJx%2FachDyoAqFRPR9poGpyKgjLLhhOXcnEOHrY5HfZRb5B95wO9M%2Fn%2FM6%2Fk3RCKiux7F3uB03iss"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 793ed6da7cdbafaf-NRT
+3 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+
+23:10:19.481 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+4 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+4 > Accept-Encoding: gzip,deflate
+
+
+23:10:19.498 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 420
+2 < 500
+2 < Date: Fri, 03 Feb 2023 23:10:19 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 198
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"c6-lOugqh+Nyq3jZh+QqGuQxpacwRQ"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=z4pfcWgG5Yi34MFU4KTG6pUVzcrhDSN%2BRDcKaxiohmAyASl%2Fx4byYFtiDncREZvowKvxdrls3j1eUqFalL%2F8C5StcIcfMV0AcibBseax0q0P8T9JaLjvGuymQ1d2CPpKBDDw"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 793ed6dacecdf6f6-NRT
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+"\nInvalid `prisma.article.update()` invocation:\n\n\nQuery interpretation error. Error for binding '0': AssertionError(\"Required exactly one parent ID to be present for connect query, found 0.\")"
+
+23:10:19.502 [pool-1-thread-3] ERROR com.intuit.karate - classpath:conduitApp/features/HomeWork.feature:29
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 420, url: https://api.realworld.io/api/articles/Haldon-132513/favorite, response: 
+"\nInvalid `prisma.article.update()` invocation:\n\n\nQuery interpretation error. Error for binding '0': AssertionError(\"Required exactly one parent ID to be present for connect query, found 0.\")"
+classpath:conduitApp/features/HomeWork.feature:29
+23:10:20.191 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 696
+4 < 200
+4 < Date: Fri, 03 Feb 2023 23:10:20 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"f34-VABdU+98ih0oY/ls/qC6ieWyexY"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vW3GgzYSVOtnsM6z30Wpq%2FFjVNAWZtLaNLh9aeT%2B9Ws25FhAeBurX4lF0OircIHB%2FJC1ppbKAt7ZUMdGaT4u6jVC1Lbz4XLJ0UHSoQ4jPyFcjOTXiZeDx8FmvcQf8nkpVVpn"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 793ed6dd8b6e1f23-NRT
+4 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":223}
+
+---------------------------------------------------------
+feature: classpath:conduitApp/features/Articles.Feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 5.5490
+---------------------------------------------------------
+
+23:10:23.507 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:conduitApp/features/Articles.Feature
+23:10:23.609 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+23:10:24.090 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:24.096 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:24.102 [pool-1-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:helpers/Dummy.feature')
+23:10:24.106 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:24.114 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:24.130 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:24.228 [pool-1-thread-2] INFO  com.intuit.karate - [print] lincoln.heaney 
+23:10:24.233 [pool-1-thread-2] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:helpers/Dummy.feature')
+23:10:24.233 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"oneida73@test.com","password":"Pokemon1411","username":"Trabuch21"}}
+
+23:10:24.235 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"mirtha86@test.com","password":"aoisdjioads","username":"contessa.berge"}}
+
+23:10:24.236 [pool-1-thread-3] WARN  com.intuit.karate - this thread waited 124 milliseconds for callonce lock: read('classpath:helpers/Dummy.feature')
+Hola
+23:10:24.240 [pool-1-thread-2] INFO  com.intuit.karate - [print] lincoln.heaney 
+23:10:24.244 [pool-1-thread-2] INFO  com.intuit.karate - [print] This is second scenario 
+Hola
+23:10:24.249 [pool-1-thread-3] INFO  com.intuit.karate - [print] lincoln.heaney 
+23:10:24.255 [pool-1-thread-3] INFO  com.intuit.karate - [print] This is first scenario 
+23:10:24.266 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 655
+2 < 200
+2 < Date: Fri, 03 Feb 2023 23:10:24 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"f34-VABdU+98ih0oY/ls/qC6ieWyexY"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jZFUUyRssGz5kN32apSBOlvYY6WL16r2s2IHTHDKE3eirwg5hmv6Ybd0r5FqvU6%2B%2B%2BtAjCV0NWFxsJRXo6VCMqa7oSG0ZWrW%2FNaS1biXXpAmZNDerFOMnBM%2BJdx3T%2Bwe4YEW"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 793ed6f72ccc3c11-NRT
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":223}
+
+23:10:24.269 [pool-1-thread-2] INFO  com.intuit.karate - [print] rebeca.swaniawski 
+23:10:24.272 [pool-1-thread-1] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:24.274 [pool-1-thread-1] DEBUG com.intuit.karate - sleeping before retry #2
+23:10:24.285 [pool-1-thread-3] INFO  com.intuit.karate - [print] agnus.lang 
+23:10:24.291 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:24.299 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:24.306 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"trabuch21@gmail.com","password":"Pokemon1411","username":"sharyn.mills"}}
+
+23:10:24.318 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 76
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"","password":"Pokemon1411","username":"donovan.prohaska"}}
+
+23:10:24.645 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 407
+1 < 422
+1 < Date: Fri, 03 Feb 2023 23:10:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 50
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Qa3VvNUtxZkOFppYlXbaVHTh1g8vobSTUfbOWFcjcfkEM8UhuW2JwAbTs%2FFIX6q1C8542Q1mQ6OlAEWvaml07AJsNfjIdhSvvpziAfvP%2FvC9FKl1bPnuj7B78HHuw2tPDxfa"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6fb2f3e33f0-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"errors":{"username":["has already been taken"]}}
+
+23:10:24.657 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+23:10:24.668 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 78
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"odell17@test.com","password":"","username":"sheila.herzog"}}
+
+23:10:24.738 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 419
+1 < 422
+1 < Date: Fri, 03 Feb 2023 23:10:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 39
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"27-t1Jmbh6zWQl9abIACseOZh9CIII"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=s74Ls3pUwTTjI8n8DT%2BmqqVBMQgxH6teIcXEirGicDgVRVVne7k9zPWEv1I%2B3klyRNExt7KUMs%2FCA5XK43WK0C9rZ%2BLi2jq%2F4U4wQHHtygQVktVPJH8wRHUHFWnqa4vWmFOl"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6fb994ae358-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"errors":{"email":["can't be blank"]}}
+
+23:10:24.743 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 433
+1 < 422
+1 < Date: Fri, 03 Feb 2023 23:10:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IhezgayfWYmoju5hb1LLK%2FXuJVu0URrFD%2BPgSzxQCGjdDq%2F7ud1deijbikWVQeT6Z5131X%2B7xPYbLKhjuWqKJACZCjcBCFx1iTO8JRI2R7%2BiY6U%2FwG6agFhxPaGTB0MvMcOT"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6fb8ffde021-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
+
+23:10:24.746 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 504
+1 < 200
+1 < Date: Fri, 03 Feb 2023 23:10:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"15f-RR9I4796VFsDPR373A90AbcTFC4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=yXoiUXAx6ZKHY00OqlurGT%2BYU4XffqoXL%2F6B84dWMmfL8H5aBZp0vylaj21ZodxbqColbW1ddIlwomTcKnQylP%2BpEddRp8pvMPws4AeyQYwi%2F3JVA6Fn19iMgghzhXk7jzeq"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6fb2a283499-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"mirtha86@test.com","username":"contessa.berge","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1pcnRoYTg2QHRlc3QuY29tIiwidXNlcm5hbWUiOiJjb250ZXNzYS5iZXJnZSIsImlhdCI6MTY3NTQ2NTgyNCwiZXhwIjoxNjgwNjQ5ODI0fQ.HwUwwV1uQEOe9c-FXwxCGZxxKYVWQjez9BrqJd9vOg4"}}
+
+23:10:25.148 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 478
+1 < 422
+1 < Date: Fri, 03 Feb 2023 23:10:25 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2a-qbpXJMY/Kgu11LsJcjS0p5wC5b0"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=POl3VaT%2FITSMgBEvwlOS%2B%2B5nC2nqJuEjS5BRN2KJGTheu8s%2FiFxyV%2BuEqCFEL%2Bd8AF9hPlBp7ahi2L2azSofLw%2BbuEhPzMARFEuE1DQ0xpuN%2BnrOWIxZd7iPMhf6ctDvdDN4"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 793ed6fddb76f702-NRT
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"errors":{"password":["can't be blank"]}}
+
+23:10:29.282 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+3 > Host: api.realworld.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+3 > Accept-Encoding: gzip,deflate
+
+
+23:10:30.006 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 723
+3 < 200
+3 < Date: Fri, 03 Feb 2023 23:10:30 GMT
+3 < Content-Type: application/json; charset=utf-8
+3 < Transfer-Encoding: chunked
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < Etag: W/"f34-VABdU+98ih0oY/ls/qC6ieWyexY"
+3 < Via: 1.1 vegur
+3 < CF-Cache-Status: DYNAMIC
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sF6271Ba0yTFCk05MtTYA82Eyhb9YX%2FL2by5LkGX%2B7gOYHlpGnhl53iMcdC0qRqofqdf2ALLRtCs9jwLntgIMt5bRq17lck1wsUTBlB%2BJNmYsZyWVt9d%2B5V2pNMBOwfjFzlK"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 793ed71ada253c09-NRT
+3 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":223}
+
+23:10:30.012 [pool-1-thread-1] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:30.015 [pool-1-thread-1] DEBUG com.intuit.karate - sleeping before retry #3
+23:10:35.023 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+4 > Accept-Encoding: gzip,deflate
+
+
+23:10:35.907 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 881
+4 < 200
+4 < Date: Fri, 03 Feb 2023 23:10:36 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"f34-VABdU+98ih0oY/ls/qC6ieWyexY"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NqAHdiRofOD9q7RXZJhyiipqQsmTTKGnfcHDs5WncE%2Bs%2B9MR9BCmbiKDWm1P28o5OLUeQoaMbNOeElqADNAsKSNInAinYtMtvpU%2Fh5leGoKptYKl2eOuzv%2Bsf1AoJzHA364x"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 793ed73fba12af3c-NRT
+4 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":223}
+
+23:10:35.911 [pool-1-thread-1] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:35.913 [pool-1-thread-1] DEBUG com.intuit.karate - sleeping before retry #4
+23:10:40.920 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+5 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+5 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+5 > Host: api.realworld.io
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+5 > Accept-Encoding: gzip,deflate
+
+
+23:10:41.632 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 700
+5 < 200
+5 < Date: Fri, 03 Feb 2023 23:10:41 GMT
+5 < Content-Type: application/json; charset=utf-8
+5 < Transfer-Encoding: chunked
+5 < Connection: keep-alive
+5 < X-Powered-By: Express
+5 < Access-Control-Allow-Origin: *
+5 < Etag: W/"f34-VABdU+98ih0oY/ls/qC6ieWyexY"
+5 < Via: 1.1 vegur
+5 < CF-Cache-Status: DYNAMIC
+5 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bwkBEkHoCthT5EfVEjmMUUfO6ynrj%2BgoOnXnMbT4uvN%2FVMz16Um3qm%2BveDF7IFDNGuhpRrzZOnxth8D9Ba0fH9bSiaoJ8eDrNqM1IQcyaM0azHJy9vWTCCprtk48eA%2ByByO9"}],"group":"cf-nel","max_age":604800}
+5 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+5 < Server: cloudflare
+5 < CF-RAY: 793ed7637fbdf6ea-NRT
+5 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":223}
+
+23:10:41.637 [pool-1-thread-1] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:41.638 [pool-1-thread-1] DEBUG com.intuit.karate - sleeping before retry #5
+23:10:46.646 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+6 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+6 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+6 > Host: api.realworld.io
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+6 > Accept-Encoding: gzip,deflate
+
+
+23:10:47.409 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 761
+6 < 200
+6 < Date: Fri, 03 Feb 2023 23:10:47 GMT
+6 < Content-Type: application/json; charset=utf-8
+6 < Transfer-Encoding: chunked
+6 < Connection: keep-alive
+6 < X-Powered-By: Express
+6 < Access-Control-Allow-Origin: *
+6 < Etag: W/"f34-VABdU+98ih0oY/ls/qC6ieWyexY"
+6 < Via: 1.1 vegur
+6 < CF-Cache-Status: DYNAMIC
+6 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=aHW0jtFMDUbX%2BRyeUrQrhnCmfqeU37b9pGna65kHxzRPCeBnZE%2FRYuTXjfIe8EyE3HnKnxcM2EM3j3vVyTsNCrfrrSDVapSfTlCEAJkfKcW3BlhnUb%2BYo20VCdiGQAwlbGTo"}],"group":"cf-nel","max_age":604800}
+6 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+6 < Server: cloudflare
+6 < CF-RAY: 793ed7871fb67821-NRT
+6 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":223}
+
+23:10:47.413 [pool-1-thread-1] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:47.416 [pool-1-thread-1] DEBUG com.intuit.karate - sleeping before retry #6
+23:10:52.424 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+7 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+7 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+7 > Host: api.realworld.io
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+7 > Accept-Encoding: gzip,deflate
+
+
+23:10:53.115 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 690
+7 < 200
+7 < Date: Fri, 03 Feb 2023 23:10:53 GMT
+7 < Content-Type: application/json; charset=utf-8
+7 < Transfer-Encoding: chunked
+7 < Connection: keep-alive
+7 < X-Powered-By: Express
+7 < Access-Control-Allow-Origin: *
+7 < Etag: W/"f34-VABdU+98ih0oY/ls/qC6ieWyexY"
+7 < Via: 1.1 vegur
+7 < CF-Cache-Status: DYNAMIC
+7 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xuBMkmi%2BSPgsZ5sHKREhL2XkQrQAMk3lZ0oxUBaKP6VFcaTYFkNTmTEgZH0gM%2FrijQCSFUckBtksWVYGm3AZNIjPT%2Fs9oXRDjb1VgwAwbuCRCGuw2ZM3m4hQQbjtv%2BCDq7CL"}],"group":"cf-nel","max_age":604800}
+7 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+7 < Server: cloudflare
+7 < CF-RAY: 793ed7ab3da8decd-NRT
+7 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":223}
+
+23:10:53.120 [pool-1-thread-1] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:53.122 [pool-1-thread-1] DEBUG com.intuit.karate - sleeping before retry #7
+23:10:58.128 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+8 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+8 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+8 > Host: api.realworld.io
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+8 > Accept-Encoding: gzip,deflate
+
+
+23:10:58.901 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 772
+8 < 200
+8 < Date: Fri, 03 Feb 2023 23:10:59 GMT
+8 < Content-Type: application/json; charset=utf-8
+8 < Transfer-Encoding: chunked
+8 < Connection: keep-alive
+8 < X-Powered-By: Express
+8 < Access-Control-Allow-Origin: *
+8 < Etag: W/"f34-VABdU+98ih0oY/ls/qC6ieWyexY"
+8 < Via: 1.1 vegur
+8 < CF-Cache-Status: DYNAMIC
+8 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=csujVyXtJ%2BVYQJ7tjtxr1y3lupqCbKxmbs9Eh4zVfRDQakRsThBaxPrU3q5vx%2FN7hgMG00HPUT%2FbawDyvj0qvDXeDhi6oibD8Z1f%2Fx2ni6k8g5Q5ZMt3eJxtdBwC9ebz8c4K"}],"group":"cf-nel","max_age":604800}
+8 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+8 < Server: cloudflare
+8 < CF-RAY: 793ed7cf180de005-NRT
+8 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":223}
+
+23:10:58.906 [pool-1-thread-1] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:58.908 [pool-1-thread-1] DEBUG com.intuit.karate - sleeping before retry #8
+23:11:03.915 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+9 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+9 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+9 > Host: api.realworld.io
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+9 > Accept-Encoding: gzip,deflate
+
+
+23:11:04.610 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 694
+9 < 200
+9 < Date: Fri, 03 Feb 2023 23:11:04 GMT
+9 < Content-Type: application/json; charset=utf-8
+9 < Transfer-Encoding: chunked
+9 < Connection: keep-alive
+9 < X-Powered-By: Express
+9 < Access-Control-Allow-Origin: *
+9 < Etag: W/"f34-VABdU+98ih0oY/ls/qC6ieWyexY"
+9 < Via: 1.1 vegur
+9 < CF-Cache-Status: DYNAMIC
+9 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=22mCdHEE8Z84xrLa7ggzzN4k2HY1TZTx%2B%2FGVs4z3cWvMvrzXjnP%2BEmvSqCaT5Xe7wcbH%2BfmVXdxKQTvz8LWk9qun1iOtECAjR4Jk%2Be1lH0Pl81BmABX9n0%2FW2GgFDREde9Mf"}],"group":"cf-nel","max_age":604800}
+9 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+9 < Server: cloudflare
+9 < CF-RAY: 793ed7f33e83e397-NRT
+9 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":223}
+
+23:11:04.615 [pool-1-thread-1] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:11:04.618 [pool-1-thread-1] DEBUG com.intuit.karate - sleeping before retry #9
+23:11:09.625 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+10 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+10 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+10 > Host: api.realworld.io
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+10 > Accept-Encoding: gzip,deflate
+
+
+23:11:10.395 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 756
+10 < 200
+10 < Date: Fri, 03 Feb 2023 23:11:10 GMT
+10 < Content-Type: application/json; charset=utf-8
+10 < Transfer-Encoding: chunked
+10 < Connection: keep-alive
+10 < X-Powered-By: Express
+10 < Access-Control-Allow-Origin: *
+10 < Etag: W/"f34-VABdU+98ih0oY/ls/qC6ieWyexY"
+10 < Via: 1.1 vegur
+10 < CF-Cache-Status: DYNAMIC
+10 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=V8STctYRCbWw0bR1ivAtQ6BGrNx%2FD4D0lPHtytoBRSGocOFZfOf3BOaIgCdil1ntw3sV0JZetjBV4KNlndFoBF3Cna5wYgr%2BwYZydNznQ%2FKvfWdB5xjBiRYYHdQ9DoeBHdM4"}],"group":"cf-nel","max_age":604800}
+10 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+10 < Server: cloudflare
+10 < CF-RAY: 793ed817292caf28-NRT
+10 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Bryan-Fossoway-132513","title":"Bryan Fossoway","description":"Volantis","body":"The things I do for love.","tagList":[],"createdAt":"2023-02-03T23:10:17.289Z","updatedAt":"2023-02-03T23:10:17.289Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":223}
+
+23:11:10.399 [pool-1-thread-1] DEBUG com.intuit.karate - retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:11:10.402 [pool-1-thread-1] ERROR com.intuit.karate - classpath:conduitApp/features/HomePage.feature:52
+When method Get
+too many retry attempts: 10
+classpath:conduitApp/features/HomePage.feature:52
+---------------------------------------------------------
+feature: classpath:conduitApp/features/HomePage.feature
+scenarios:  5 | passed:  2 | failed:  3 | time: 65.6085
+---------------------------------------------------------
+
+23:11:10.723 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 5 (3 remaining) classpath:conduitApp/features/HomePage.feature
+---------------------------------------------------------
+feature: classpath:conduitApp/features/HomeWork.feature
+scenarios:  2 | passed:  1 | failed:  1 | time: 2.1443
+---------------------------------------------------------
+
+23:11:10.911 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 5 (2 remaining) classpath:conduitApp/features/HomeWork.feature
+---------------------------------------------------------
+feature: classpath:conduitApp/features/Hooks.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.3068
+---------------------------------------------------------
+
+23:11:11.128 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 5 (1 remaining) classpath:conduitApp/features/Hooks.feature
+---------------------------------------------------------
+feature: classpath:conduitApp/features/SigUp.feature
+scenarios:  5 | passed:  5 | failed:  0 | time: 2.5225
+---------------------------------------------------------
+
+23:11:11.289 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:conduitApp/features/SigUp.feature
+Karate version: 1.3.1
+======================================================
+elapsed:  65.88 | threads:    5 | thread time: 76.13 
+features:     5 | skipped:    0 | efficiency: 0.23
+scenarios:   16 | passed:    12 | failed: 4
+======================================================
+>>> failed features:
+match failed: EQUALS
+  $ | not equal | match failed for name: 'articlesCount' (MAP:MAP)
+  {"articles":[{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Brandon-the-Bad-132513","title":"Brandon the Bad","description":"Lys","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:18:43.184Z","updatedAt":"2023-01-30T19:18:43.184Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":222}
+  {"articles":"#[10]","articlesCount":220}
+
+    $.articlesCount | not equal (NUMBER:NUMBER)
+    222
+    220
+
+classpath:conduitApp/features/HomePage.feature:25
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  0
+  1
+
+classpath:conduitApp/features/HomePage.feature:44
+too many retry attempts: 10
+classpath:conduitApp/features/HomePage.feature:52
+status code was: 500, expected: 200, response time in milliseconds: 420, url: https://api.realworld.io/api/articles/Haldon-132513/favorite, response: 
+"\nInvalid `prisma.article.update()` invocation:\n\n\nQuery interpretation error. Error for binding '0': AssertionError(\"Required exactly one parent ID to be present for connect query, found 0.\")"
+classpath:conduitApp/features/HomeWork.feature:29
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.3.1
+file:///usr/src/app/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+    <system-err><![CDATA[Feb 03, 2023 11:11:12 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/usr/src/app/target/karate-reports/conduitApp.features.Articles.Feature.json' contains 1 features
+Feb 03, 2023 11:11:12 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/usr/src/app/target/karate-reports/conduitApp.features.HomePage.json' contains 1 features
+Feb 03, 2023 11:11:12 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/usr/src/app/target/karate-reports/conduitApp.features.HomeWork.json' contains 1 features
+Feb 03, 2023 11:11:12 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/usr/src/app/target/karate-reports/conduitApp.features.Hooks.json' contains 1 features
+Feb 03, 2023 11:11:12 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/usr/src/app/target/karate-reports/conduitApp.features.SigUp.json' contains 1 features
+]]></system-err>
+  </testcase>
+</testsuite>

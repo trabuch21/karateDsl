@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: conduitApp.ConduitTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.555 s <<< FAILURE! - in conduitApp.ConduitTest
+testParallel  Time elapsed: 3.55 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'boolean org.apache.commons.lang3.ObjectUtils.isNotEmpty(java.lang.Object)'
+	at conduitApp.ConduitTest.generateReport(ConduitTest.java:36)
+	at conduitApp.ConduitTest.testParallel(ConduitTest.java:26)
+

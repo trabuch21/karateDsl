@@ -1,0 +1,40 @@
+Apit Testing
+To run test with certain tags:
+mvn test -Dkarate.options="--tags @debug"
+
+To ignore a test case just use the tag @ignore on the test
+run it with this: mvn test
+
+To skip a scenario you have to use ~
+mvn test -Dkarate.options="--tags ~@debug"
+
+mvn test -Dkarate.options="classpath:conduitApp/feature/HomePage.feature:7"
+
+
+To run test with certain tags and environment:
+mvn test -Dkarate.options="--tags @debug" -Dkarate.env="dev"
+
+
+
+Signup feature:
+user, mail, pwd
+
+any is for match at least one of that match
+And match response.tags contains any ['fish', 'dog','qui']
+Also you can do with !not contain
+
+And match response.tags contains only []
+
+
+And match response.articles[*] the * is a wildcard, will loop through each item of the array
+
+"##string" double ## means null and string in this case
+f
+callonce es para usarlo una vez, entonces en background no crea alguno nuevo cada vez que se corren los escenarios
+
+Parallel execution:
+Check the runner code
+
+How to configure secuential 
+
+@parallel-false on the feature file at feature or scenario level

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @retry</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>conduitApp</td>
+      <td>03 Feb 2023, 23:11</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@retry</td>
+          <td      class="passed"    >4</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">6</td>
+
+          <td >0</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="53041453221">53.041</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_3833395451.html">conduitApp/features/HomePage.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4088154727.html">@retry</a>
+</div>
+
+
+  <span class="lead-duration duration">53.041</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Retry call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = {count: 10, interval: 5000}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params {limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until response.articles[0].favoritesCount == 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">53.040</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>too</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>too many retry attempts: 10
+classpath:conduitApp/features/HomePage.feature:52</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>23:10:17.368 request:
+1 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:10:18.595 response time in milliseconds: 1222
+1 &lt; 200
+1 &lt; Date: Fri, 03 Feb 2023 23:10:18 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;f1e-ap111XhILt1yqWYhbUXZRdggySI&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=tHx7piej3vO%2BRMeGi6h62ZAh2YE67Di%2Fyv6CR0HlGaG50znQb4Sf60IjI9TuHqQH%2FEfHmIB6xN9O1QmVtWWAUgAwfsMs45cLJMTjLrM2tLqDlkxBlD7I04qqs7r5PVA9kvJE&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 793ed6d03921b006-NRT
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Haldon-132513&quot;,&quot;title&quot;:&quot;Haldon&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.290Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.290Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Bryan-Fossoway-132513&quot;,&quot;title&quot;:&quot;Bryan Fossoway&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:224}
+
+23:10:18.600 retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:18.603 sleeping before retry #1
+23:10:23.611 request:
+2 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+23:10:24.271 response time in milliseconds: 655
+2 &lt; 200
+2 &lt; Date: Fri, 03 Feb 2023 23:10:24 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;f34-VABdU+98ih0oY/ls/qC6ieWyexY&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=jZFUUyRssGz5kN32apSBOlvYY6WL16r2s2IHTHDKE3eirwg5hmv6Ybd0r5FqvU6%2B%2B%2BtAjCV0NWFxsJRXo6VCMqa7oSG0ZWrW%2FNaS1biXXpAmZNDerFOMnBM%2BJdx3T%2Bwe4YEW&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 793ed6f72ccc3c11-NRT
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Bryan-Fossoway-132513&quot;,&quot;title&quot;:&quot;Bryan Fossoway&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeffory-Mallister-132513&quot;,&quot;title&quot;:&quot;Jeffory Mallister&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:223}
+
+23:10:24.274 retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:24.276 sleeping before retry #2
+23:10:29.283 request:
+3 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+3 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+3 &gt; Host: api.realworld.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+23:10:30.010 response time in milliseconds: 723
+3 &lt; 200
+3 &lt; Date: Fri, 03 Feb 2023 23:10:30 GMT
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; X-Powered-By: Express
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Etag: W/&quot;f34-VABdU+98ih0oY/ls/qC6ieWyexY&quot;
+3 &lt; Via: 1.1 vegur
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=sF6271Ba0yTFCk05MtTYA82Eyhb9YX%2FL2by5LkGX%2B7gOYHlpGnhl53iMcdC0qRqofqdf2ALLRtCs9jwLntgIMt5bRq17lck1wsUTBlB%2BJNmYsZyWVt9d%2B5V2pNMBOwfjFzlK&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+3 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+3 &lt; Server: cloudflare
+3 &lt; CF-RAY: 793ed71ada253c09-NRT
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Bryan-Fossoway-132513&quot;,&quot;title&quot;:&quot;Bryan Fossoway&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeffory-Mallister-132513&quot;,&quot;title&quot;:&quot;Jeffory Mallister&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:223}
+
+23:10:30.015 retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:30.017 sleeping before retry #3
+23:10:35.025 request:
+4 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+4 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+4 &gt; Host: api.realworld.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+23:10:35.910 response time in milliseconds: 881
+4 &lt; 200
+4 &lt; Date: Fri, 03 Feb 2023 23:10:36 GMT
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; X-Powered-By: Express
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Etag: W/&quot;f34-VABdU+98ih0oY/ls/qC6ieWyexY&quot;
+4 &lt; Via: 1.1 vegur
+4 &lt; CF-Cache-Status: DYNAMIC
+4 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=NqAHdiRofOD9q7RXZJhyiipqQsmTTKGnfcHDs5WncE%2Bs%2B9MR9BCmbiKDWm1P28o5OLUeQoaMbNOeElqADNAsKSNInAinYtMtvpU%2Fh5leGoKptYKl2eOuzv%2Bsf1AoJzHA364x&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+4 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+4 &lt; Server: cloudflare
+4 &lt; CF-RAY: 793ed73fba12af3c-NRT
+4 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Bryan-Fossoway-132513&quot;,&quot;title&quot;:&quot;Bryan Fossoway&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeffory-Mallister-132513&quot;,&quot;title&quot;:&quot;Jeffory Mallister&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:223}
+
+23:10:35.913 retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:35.915 sleeping before retry #4
+23:10:40.931 request:
+5 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+5 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+5 &gt; Host: api.realworld.io
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+5 &gt; Accept-Encoding: gzip,deflate
+
+
+23:10:41.635 response time in milliseconds: 700
+5 &lt; 200
+5 &lt; Date: Fri, 03 Feb 2023 23:10:41 GMT
+5 &lt; Content-Type: application/json; charset=utf-8
+5 &lt; Transfer-Encoding: chunked
+5 &lt; Connection: keep-alive
+5 &lt; X-Powered-By: Express
+5 &lt; Access-Control-Allow-Origin: *
+5 &lt; Etag: W/&quot;f34-VABdU+98ih0oY/ls/qC6ieWyexY&quot;
+5 &lt; Via: 1.1 vegur
+5 &lt; CF-Cache-Status: DYNAMIC
+5 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=bwkBEkHoCthT5EfVEjmMUUfO6ynrj%2BgoOnXnMbT4uvN%2FVMz16Um3qm%2BveDF7IFDNGuhpRrzZOnxth8D9Ba0fH9bSiaoJ8eDrNqM1IQcyaM0azHJy9vWTCCprtk48eA%2ByByO9&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+5 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+5 &lt; Server: cloudflare
+5 &lt; CF-RAY: 793ed7637fbdf6ea-NRT
+5 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Bryan-Fossoway-132513&quot;,&quot;title&quot;:&quot;Bryan Fossoway&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeffory-Mallister-132513&quot;,&quot;title&quot;:&quot;Jeffory Mallister&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:223}
+
+23:10:41.638 retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:41.639 sleeping before retry #5
+23:10:46.648 request:
+6 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+6 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+6 &gt; Host: api.realworld.io
+6 &gt; Connection: Keep-Alive
+6 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+6 &gt; Accept-Encoding: gzip,deflate
+
+
+23:10:47.412 response time in milliseconds: 761
+6 &lt; 200
+6 &lt; Date: Fri, 03 Feb 2023 23:10:47 GMT
+6 &lt; Content-Type: application/json; charset=utf-8
+6 &lt; Transfer-Encoding: chunked
+6 &lt; Connection: keep-alive
+6 &lt; X-Powered-By: Express
+6 &lt; Access-Control-Allow-Origin: *
+6 &lt; Etag: W/&quot;f34-VABdU+98ih0oY/ls/qC6ieWyexY&quot;
+6 &lt; Via: 1.1 vegur
+6 &lt; CF-Cache-Status: DYNAMIC
+6 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=aHW0jtFMDUbX%2BRyeUrQrhnCmfqeU37b9pGna65kHxzRPCeBnZE%2FRYuTXjfIe8EyE3HnKnxcM2EM3j3vVyTsNCrfrrSDVapSfTlCEAJkfKcW3BlhnUb%2BYo20VCdiGQAwlbGTo&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+6 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+6 &lt; Server: cloudflare
+6 &lt; CF-RAY: 793ed7871fb67821-NRT
+6 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Bryan-Fossoway-132513&quot;,&quot;title&quot;:&quot;Bryan Fossoway&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeffory-Mallister-132513&quot;,&quot;title&quot;:&quot;Jeffory Mallister&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:223}
+
+23:10:47.416 retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:47.417 sleeping before retry #6
+23:10:52.425 request:
+7 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+7 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+7 &gt; Host: api.realworld.io
+7 &gt; Connection: Keep-Alive
+7 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+7 &gt; Accept-Encoding: gzip,deflate
+
+
+23:10:53.119 response time in milliseconds: 690
+7 &lt; 200
+7 &lt; Date: Fri, 03 Feb 2023 23:10:53 GMT
+7 &lt; Content-Type: application/json; charset=utf-8
+7 &lt; Transfer-Encoding: chunked
+7 &lt; Connection: keep-alive
+7 &lt; X-Powered-By: Express
+7 &lt; Access-Control-Allow-Origin: *
+7 &lt; Etag: W/&quot;f34-VABdU+98ih0oY/ls/qC6ieWyexY&quot;
+7 &lt; Via: 1.1 vegur
+7 &lt; CF-Cache-Status: DYNAMIC
+7 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=xuBMkmi%2BSPgsZ5sHKREhL2XkQrQAMk3lZ0oxUBaKP6VFcaTYFkNTmTEgZH0gM%2FrijQCSFUckBtksWVYGm3AZNIjPT%2Fs9oXRDjb1VgwAwbuCRCGuw2ZM3m4hQQbjtv%2BCDq7CL&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+7 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+7 &lt; Server: cloudflare
+7 &lt; CF-RAY: 793ed7ab3da8decd-NRT
+7 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Bryan-Fossoway-132513&quot;,&quot;title&quot;:&quot;Bryan Fossoway&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeffory-Mallister-132513&quot;,&quot;title&quot;:&quot;Jeffory Mallister&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:223}
+
+23:10:53.122 retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:53.124 sleeping before retry #7
+23:10:58.129 request:
+8 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+8 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+8 &gt; Host: api.realworld.io
+8 &gt; Connection: Keep-Alive
+8 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+8 &gt; Accept-Encoding: gzip,deflate
+
+
+23:10:58.905 response time in milliseconds: 772
+8 &lt; 200
+8 &lt; Date: Fri, 03 Feb 2023 23:10:59 GMT
+8 &lt; Content-Type: application/json; charset=utf-8
+8 &lt; Transfer-Encoding: chunked
+8 &lt; Connection: keep-alive
+8 &lt; X-Powered-By: Express
+8 &lt; Access-Control-Allow-Origin: *
+8 &lt; Etag: W/&quot;f34-VABdU+98ih0oY/ls/qC6ieWyexY&quot;
+8 &lt; Via: 1.1 vegur
+8 &lt; CF-Cache-Status: DYNAMIC
+8 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=csujVyXtJ%2BVYQJ7tjtxr1y3lupqCbKxmbs9Eh4zVfRDQakRsThBaxPrU3q5vx%2FN7hgMG00HPUT%2FbawDyvj0qvDXeDhi6oibD8Z1f%2Fx2ni6k8g5Q5ZMt3eJxtdBwC9ebz8c4K&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+8 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+8 &lt; Server: cloudflare
+8 &lt; CF-RAY: 793ed7cf180de005-NRT
+8 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Bryan-Fossoway-132513&quot;,&quot;title&quot;:&quot;Bryan Fossoway&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeffory-Mallister-132513&quot;,&quot;title&quot;:&quot;Jeffory Mallister&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:223}
+
+23:10:58.908 retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:10:58.909 sleeping before retry #8
+23:11:03.916 request:
+9 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+9 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+9 &gt; Host: api.realworld.io
+9 &gt; Connection: Keep-Alive
+9 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+9 &gt; Accept-Encoding: gzip,deflate
+
+
+23:11:04.614 response time in milliseconds: 694
+9 &lt; 200
+9 &lt; Date: Fri, 03 Feb 2023 23:11:04 GMT
+9 &lt; Content-Type: application/json; charset=utf-8
+9 &lt; Transfer-Encoding: chunked
+9 &lt; Connection: keep-alive
+9 &lt; X-Powered-By: Express
+9 &lt; Access-Control-Allow-Origin: *
+9 &lt; Etag: W/&quot;f34-VABdU+98ih0oY/ls/qC6ieWyexY&quot;
+9 &lt; Via: 1.1 vegur
+9 &lt; CF-Cache-Status: DYNAMIC
+9 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=22mCdHEE8Z84xrLa7ggzzN4k2HY1TZTx%2B%2FGVs4z3cWvMvrzXjnP%2BEmvSqCaT5Xe7wcbH%2BfmVXdxKQTvz8LWk9qun1iOtECAjR4Jk%2Be1lH0Pl81BmABX9n0%2FW2GgFDREde9Mf&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+9 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+9 &lt; Server: cloudflare
+9 &lt; CF-RAY: 793ed7f33e83e397-NRT
+9 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Bryan-Fossoway-132513&quot;,&quot;title&quot;:&quot;Bryan Fossoway&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeffory-Mallister-132513&quot;,&quot;title&quot;:&quot;Jeffory Mallister&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:223}
+
+23:11:04.618 retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:11:04.620 sleeping before retry #9
+23:11:09.639 request:
+10 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+10 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRyYWJ1Y2gyMUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRyYWJ1Y2gyMSIsImlhdCI6MTY3NTQ2NTgxNSwiZXhwIjoxNjgwNjQ5ODE1fQ.U5_sbWYDYbj1UGqdwdvI7yVc3-7R-ZYEJfkizbdIJJ0
+10 &gt; Host: api.realworld.io
+10 &gt; Connection: Keep-Alive
+10 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.2.1)
+10 &gt; Accept-Encoding: gzip,deflate
+
+
+23:11:10.398 response time in milliseconds: 756
+10 &lt; 200
+10 &lt; Date: Fri, 03 Feb 2023 23:11:10 GMT
+10 &lt; Content-Type: application/json; charset=utf-8
+10 &lt; Transfer-Encoding: chunked
+10 &lt; Connection: keep-alive
+10 &lt; X-Powered-By: Express
+10 &lt; Access-Control-Allow-Origin: *
+10 &lt; Etag: W/&quot;f34-VABdU+98ih0oY/ls/qC6ieWyexY&quot;
+10 &lt; Via: 1.1 vegur
+10 &lt; CF-Cache-Status: DYNAMIC
+10 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=V8STctYRCbWw0bR1ivAtQ6BGrNx%2FD4D0lPHtytoBRSGocOFZfOf3BOaIgCdil1ntw3sV0JZetjBV4KNlndFoBF3Cna5wYgr%2BwYZydNznQ%2FKvfWdB5xjBiRYYHdQ9DoeBHdM4&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+10 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+10 &lt; Server: cloudflare
+10 &lt; CF-RAY: 793ed817292caf28-NRT
+10 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Bryan-Fossoway-132513&quot;,&quot;title&quot;:&quot;Bryan Fossoway&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;The things I do for love.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T23:10:17.289Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Qarl-Correy-132513&quot;,&quot;title&quot;:&quot;Qarl Correy&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;... a mind needs books as a sword needs a whetstone, if it is to keep its edge.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.500Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Samwell-Tarly-132513&quot;,&quot;title&quot;:&quot;Samwell Tarly&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-03T22:41:23.431Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Galladon-of-Morne-132513&quot;,&quot;title&quot;:&quot;Galladon of Morne&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.065Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Wilbert-Osgrey-132513&quot;,&quot;title&quot;:&quot;Wilbert Osgrey&quot;,&quot;description&quot;:&quot;New Ghis&quot;,&quot;body&quot;:&quot;There are no heroes...in life, the monsters win.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:42.064Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Aeron-Greyjoy-132513&quot;,&quot;title&quot;:&quot;Aeron Greyjoy&quot;,&quot;description&quot;:&quot;Astapor&quot;,&quot;body&quot;:&quot;Knowledge could be more valuable than gold, more deadly than a dagger.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;updatedAt&quot;:&quot;2023-02-01T18:13:16.517Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;test22221-132513&quot;,&quot;title&quot;:&quot;test22221&quot;,&quot;description&quot;:&quot;asdasd&quot;,&quot;body&quot;:&quot;asdadasd&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-31T19:30:43.042Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joss-the-Gloom-132513&quot;,&quot;title&quot;:&quot;Joss the Gloom&quot;,&quot;description&quot;:&quot;Myr&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:19.861Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Daemon-Targaryen-132513&quot;,&quot;title&quot;:&quot;Daemon Targaryen&quot;,&quot;description&quot;:&quot;Sar Meel&quot;,&quot;body&quot;:&quot;Nothing burns like the cold.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:19:04.945Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Jeffory-Mallister-132513&quot;,&quot;title&quot;:&quot;Jeffory Mallister&quot;,&quot;description&quot;:&quot;Pentos&quot;,&quot;body&quot;:&quot;Hodor? Hodor.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;updatedAt&quot;:&quot;2023-01-30T19:18:43.198Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;trabuch21&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:223}
+
+23:11:10.401 retry condition not satisfied: response.articles[0].favoritesCount == 1
+23:11:10.404 classpath:conduitApp/features/HomePage.feature:52
+When method Get
+too many retry attempts: 10
+classpath:conduitApp/features/HomePage.feature:52
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

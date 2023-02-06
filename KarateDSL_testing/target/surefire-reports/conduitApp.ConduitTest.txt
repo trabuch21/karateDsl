@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: conduitApp.ConduitTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 70.433 s <<< FAILURE! - in conduitApp.ConduitTest
+testParallel  Time elapsed: 70.406 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | not equal | match failed for name: 'articlesCount' (MAP:MAP)
+  {"articles":[{"slug":"Qarl-Correy-132513","title":"Qarl Correy","description":"Elyria","body":"... a mind needs books as a sword needs a whetstone, if it is to keep its edge.","tagList":[],"createdAt":"2023-02-03T22:41:23.500Z","updatedAt":"2023-02-03T22:41:23.500Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Samwell-Tarly-132513","title":"Samwell Tarly","description":"Tolos","body":"A lion doesn't concern itself with the opinion of sheep.","tagList":[],"createdAt":"2023-02-03T22:41:23.431Z","updatedAt":"2023-02-03T22:41:23.431Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Galladon-of-Morne-132513","title":"Galladon of Morne","description":"Yunkai","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","tagList":[],"createdAt":"2023-02-01T18:13:42.065Z","updatedAt":"2023-02-01T18:13:42.065Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Wilbert-Osgrey-132513","title":"Wilbert Osgrey","description":"New Ghis","body":"There are no heroes...in life, the monsters win.","tagList":[],"createdAt":"2023-02-01T18:13:42.064Z","updatedAt":"2023-02-01T18:13:42.064Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Aeron-Greyjoy-132513","title":"Aeron Greyjoy","description":"Astapor","body":"Knowledge could be more valuable than gold, more deadly than a dagger.","tagList":[],"createdAt":"2023-02-01T18:13:16.517Z","updatedAt":"2023-02-01T18:13:16.517Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"test22221-132513","title":"test22221","description":"asdasd","body":"asdadasd","tagList":[],"createdAt":"2023-01-31T19:30:43.042Z","updatedAt":"2023-01-31T19:30:43.042Z","favorited":true,"favoritesCount":1,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Joss-the-Gloom-132513","title":"Joss the Gloom","description":"Myr","body":"Do the dead frighten you?","tagList":[],"createdAt":"2023-01-30T19:19:19.861Z","updatedAt":"2023-01-30T19:19:19.861Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Daemon-Targaryen-132513","title":"Daemon Targaryen","description":"Sar Meel","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:19:04.945Z","updatedAt":"2023-01-30T19:19:04.945Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Jeffory-Mallister-132513","title":"Jeffory Mallister","description":"Pentos","body":"Hodor? Hodor.","tagList":[],"createdAt":"2023-01-30T19:18:43.198Z","updatedAt":"2023-01-30T19:18:43.198Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Brandon-the-Bad-132513","title":"Brandon the Bad","description":"Lys","body":"Nothing burns like the cold.","tagList":[],"createdAt":"2023-01-30T19:18:43.184Z","updatedAt":"2023-01-30T19:18:43.184Z","favorited":false,"favoritesCount":0,"author":{"username":"trabuch21","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":222}
+  {"articles":"#[10]","articlesCount":220}
+
+    $.articlesCount | not equal (NUMBER:NUMBER)
+    222
+    220
+
+classpath:conduitApp/features/HomePage.feature:25
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  0
+  1
+
+classpath:conduitApp/features/HomePage.feature:44
+too many retry attempts: 10
+classpath:conduitApp/features/HomePage.feature:52
+status code was: 500, expected: 200, response time in milliseconds: 420, url: https://api.realworld.io/api/articles/Haldon-132513/favorite, response: 
+"\nInvalid `prisma.article.update()` invocation:\n\n\nQuery interpretation error. Error for binding '0': AssertionError(\"Required exactly one parent ID to be present for connect query, found 0.\")"
+classpath:conduitApp/features/HomeWork.feature:29 ==> expected: <0> but was: <4>
+	at conduitApp.ConduitTest.testParallel(ConduitTest.java:27)
+

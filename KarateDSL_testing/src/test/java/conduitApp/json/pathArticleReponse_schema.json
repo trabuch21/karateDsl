@@ -1,0 +1,30 @@
+{
+    "id": "#number",
+    "slug": "#string",
+    "title": "#string",
+    "description": "#string",
+    "body": "#string",
+    "createdAt": "#? timeValidator(_)",
+    "updatedAt": "#? timeValidator(_)",
+    "authorId": "#number",
+    "tagList": "#array",
+    "author": {
+        "username": "#string",
+        "bio": "##string",
+        "image": "#string",
+        "following": "#boolean"
+    },
+    "favoritedBy": [
+        {
+            "id": "#number",
+            "email": "#string",
+            "username": "#string",
+            "password": "#string",
+            "image": "#string",
+            "bio": "##string",
+            "demo": "#boolean"
+        }
+    ],
+    "favorited": "#boolean",
+    "favoritesCount": "#number"
+}
